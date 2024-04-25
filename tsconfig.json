@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node", "vite-plugin-svgr/client"],
+    "paths": {
+      "@assets/svg": ["src/assets/svg/index.ts"],
+      "@assets/translations": ["src/assets/translations/index.ts"],
+      "@redux": ["src/redux/index.ts"],
+      "@boundaries": ["src/boundaries/index.ts"],
+      "@navigation": ["src/navigation/index.ts"],
+      "@helpers": ["src/helpers/index.ts"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

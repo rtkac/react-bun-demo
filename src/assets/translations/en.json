@@ -1,0 +1,13 @@
+{
+  "en": {
+    "translation": {
+      "lang.en": "en",
+      "navigation.home": "Home",
+      "navigation.form": "Form",
+      "navigation.something": "Something",
+      "error.global.description": "Something went wrong, try again later.",
+      "404.heading": "404 Not Found",
+      "404.description": "The page you requested does not exist"
+    }
+  }
+}
