@@ -2,6 +2,8 @@ import { useTranslation } from 'react-i18next';
 
 import { commonApiClient } from '@redux';
 
+import { SignUp } from './SignUp';
+
 export const Home: React.FC = () => {
   const { t } = useTranslation();
 
@@ -23,6 +25,10 @@ export const Home: React.FC = () => {
           <div className="h-40 rounded-lg bg-violet-300 shadow-lg" />
           <div className="h-40 rounded-lg bg-violet-400 shadow-lg" />
         </div>
+      </div>
+      <div>
+        <h2>Sign Up</h2>
+        <SignUp />
       </div>
     </>
   );

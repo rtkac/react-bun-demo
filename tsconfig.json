@@ -24,6 +24,8 @@
     "paths": {
       "@assets/svg": ["src/assets/svg/index.ts"],
       "@assets/translations": ["src/assets/translations/index.ts"],
+      "@layouts": ["src/layouts/index.ts"],
+      "@components": ["src/components/index.ts"],
       "@redux": ["src/redux/index.ts"],
       "@boundaries": ["src/boundaries/index.ts"],
       "@navigation": ["src/navigation/index.ts"],
