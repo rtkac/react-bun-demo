@@ -1,7 +1,10 @@
+import { expect } from 'bun:test';
 import React, { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
-
+import * as matchers from '@testing-library/jest-dom/matchers';
 import { TranslationsBoundary } from '@boundaries';
+
+expect.extend(matchers);
 
 // eslint-disable-next-line react-refresh/only-export-components
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
