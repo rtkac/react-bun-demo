@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "bun:build": "npx bun x --bun vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "bun:test": "npx bun test"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
@@ -23,7 +24,9 @@
   },
   "devDependencies": {
     "@hookform/devtools": "^4.3.1",
-    "@types/node": "^20.12.7",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.4",
+    "@types/bun": "^1.1.0",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

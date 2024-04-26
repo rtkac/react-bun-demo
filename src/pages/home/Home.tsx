@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import { commonApiClient } from '@redux';
 
-import { SignUp } from './SignUp';
+import { SignUp } from './components/SignUp';
 
 export const Home: React.FC = () => {
   const { t } = useTranslation();

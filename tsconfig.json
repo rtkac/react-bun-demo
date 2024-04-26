@@ -20,7 +20,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["node", "vite-plugin-svgr/client"],
+    "types": ["bun-types", "vite-plugin-svgr/client"],
     "paths": {
       "@assets/svg": ["src/assets/svg/index.ts"],
       "@assets/translations": ["src/assets/translations/index.ts"],
@@ -29,9 +29,9 @@
       "@redux": ["src/redux/index.ts"],
       "@boundaries": ["src/boundaries/index.ts"],
       "@navigation": ["src/navigation/index.ts"],
-      "@helpers": ["src/helpers/index.ts"]
+      "@helpers": ["src/helpers/index.ts"],
+      "@test": ["src/test/index.ts"]
     }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"]
 }
