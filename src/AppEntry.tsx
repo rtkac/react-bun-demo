@@ -1,6 +1,6 @@
-import { ReduxBoundary, RouterBoundary, TranslationsBoundary } from '@boundaries';
+import { ReduxBoundary, RouterBoundary, TranslationsBoundary } from "@boundaries";
 
-import { Logo } from '@assets/svg';
+import { Logo } from "@assets/svg";
 
 function App() {
   return (

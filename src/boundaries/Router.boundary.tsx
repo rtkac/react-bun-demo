@@ -1,16 +1,16 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import * as fromNav from '@navigation';
+import * as fromNav from "@navigation";
 
-import { MainLayout } from '@layouts';
+import { MainLayout } from "@layouts";
 
-import { Home } from '../pages/home/Home';
-import { NotFound } from '../pages/not-found/NotFound';
+import { Home } from "../pages/home/Home";
+import { NotFound } from "../pages/not-found/NotFound";
 
 export const RouterBoundary: React.FC = () => {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <MainLayout />,
       children: [
         {

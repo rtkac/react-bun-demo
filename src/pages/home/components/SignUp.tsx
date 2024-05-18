@@ -1,7 +1,7 @@
-import React from 'react';
-import { FormProvider, useForm } from 'react-hook-form';
+import React from "react";
+import { FormProvider, useForm } from "react-hook-form";
 
-import { Form } from '@components';
+import { Form } from "@components";
 
 interface SignUpValues {
   firstName: string;
@@ -11,8 +11,8 @@ interface SignUpValues {
 export const SignUp: React.FC = () => {
   const methods = useForm<SignUpValues>({
     defaultValues: {
-      firstName: '',
-      lastName: '',
+      firstName: "",
+      lastName: "",
     },
   });
   const { register, handleSubmit, formState } = methods;
@@ -24,8 +24,18 @@ export const SignUp: React.FC = () => {
   return (
     <FormProvider {...methods}>
       <Form.Root onSubmit={handleSubmit(onSubmit)}>
-        <Form.Input {...register('firstName', { required: true })} placeholder="Enter first name" />
-        <Form.Input {...register('lastName', { required: true })} placeholder="Enter last name" />
+        <Form.Input
+          {...register("firstName", {
+            required: true,
+          })}
+          placeholder="Enter first name"
+        />
+        <Form.Input
+          {...register("lastName", {
+            required: true,
+          })}
+          placeholder="Enter last name"
+        />
         <button
           type="submit"
           disabled={!formState.isValid}

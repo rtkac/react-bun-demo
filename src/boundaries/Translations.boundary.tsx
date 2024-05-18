@@ -1,6 +1,6 @@
-import type { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from "react";
 
-import { registerTranslations } from '@helpers';
+import { registerTranslations } from "@helpers";
 
 registerTranslations();
 

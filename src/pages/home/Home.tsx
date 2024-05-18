@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
-import { commonApiClient } from '@redux';
+import { commonApiClient } from "@redux";
 
-import { SignUp } from './components/SignUp';
+import { SignUp } from "./components/SignUp";
 
 export const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -14,9 +14,9 @@ export const Home: React.FC = () => {
   return (
     <>
       <div>
-        <p className="text-md font-normal text-gray-500 lg:text-lg ">{t('home.paragraph')}</p>
+        <p className="text-md font-normal text-gray-500 lg:text-lg ">{t("home.paragraph")}</p>
         <br />
-        <p className="text-md font-normal text-gray-500 lg:text-lg">{t('home.paragraph')}</p>
+        <p className="text-md font-normal text-gray-500 lg:text-lg">{t("home.paragraph")}</p>
       </div>
       <div className="my-10 w-full">
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">

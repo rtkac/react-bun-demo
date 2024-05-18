@@ -1,12 +1,12 @@
-import { test, expect } from 'bun:test';
+import { test, expect } from "bun:test";
 
-import { render, screen } from '@test';
+import { render, screen } from "@test";
 
-import { SignUp } from './SignUp';
+import { SignUp } from "./SignUp";
 
-test('Reserve appointment', async () => {
+test("Reserve appointment", async () => {
   render(<SignUp />);
 
-  const button = screen.getByRole('button');
+  const button = screen.getByRole("button");
   expect(button).toBeDisabled();
 });

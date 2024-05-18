@@ -1,8 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { commonApiClient } from './apiClients';
+import { configureStore } from "@reduxjs/toolkit";
+import { commonApiClient } from "./apiClients";
 
 export const store = configureStore({
-  devTools: process.env.NODE_ENV === 'development',
+  devTools: process.env.NODE_ENV === "development",
   reducer: {
     [commonApiClient.reducerPath]: commonApiClient.reducer,
   },

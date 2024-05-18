@@ -1,7 +1,7 @@
-import React from 'react';
-import type { ComponentPropsWithRef, PropsWithChildren } from 'react';
+import React from "react";
+import type { ComponentPropsWithRef, PropsWithChildren } from "react";
 
-interface RootProps extends ComponentPropsWithRef<'form'>, PropsWithChildren {}
+interface RootProps extends ComponentPropsWithRef<"form">, PropsWithChildren {}
 
 export const Root = React.forwardRef<HTMLFormElement, RootProps>(({ title, children, ...rest }, ref) => {
   return (
