@@ -1,10 +1,15 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-export const MainLayout = React.forwardRef<HTMLDivElement>((_, ref) => {
+interface MainLayoutProps {
+  CoreHeader?: JSX.Element;
+}
+
+export const MainLayout = React.forwardRef<HTMLDivElement, MainLayoutProps>(({ CoreHeader }, ref) => {
   return (
     <div ref={ref}>
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-4 py-8">
+      <div className="mx-auto flex max-w-[475px]">
+        {CoreHeader}
         <Outlet />
       </div>
     </div>

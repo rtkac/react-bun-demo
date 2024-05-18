@@ -1,6 +1,7 @@
 import { expect } from "bun:test";
-import React, { ReactElement } from "react";
-import { render, RenderOptions } from "@testing-library/react";
+import type React from "react";
+import type { ReactElement } from "react";
+import { render, type RenderOptions } from "@testing-library/react";
 import * as matchers from "@testing-library/jest-dom/matchers";
 import { TranslationsBoundary } from "@boundaries";
 
